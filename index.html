@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicios de JavaScript</h1>
+        <p class="subtitle">Da clic en cada ejercicio</p>
+
+        <div class="grid-container">
+            <div class="exercise-card" id="ejercicio1">
+                <h3>Ejercicio 1</h3>
+                <p>Unir las palabras del arreglo en una oración.</p>
+                <button onclick="ejecutarEjercicio(1)">Ejecutar ejercicio 1</button>
+            </div>
+
+            <div class="exercise-card" id="ejercicio2">
+                <h3>Ejercicio 2</h3>
+                <p>Ingresa números separados por coma para duplicarlos.</p>
+                <input type="text" id="input2" placeholder="Ej: 1, 2, 4, 5">
+                <button onclick="ejecutarEjercicio(2)">Ejecutar ejercicio 2</button>
+            </div>
+
+            <div class="exercise-card" id="ejercicio3">
+                <h3>Ejercicio 3</h3>
+                <p>Ingresa números separados por coma para calcular suma y producto.</p>
+                <input type="text" id="input3" placeholder="Ej: 1, 2, 3, 4">
+                <button onclick="ejecutarEjercicio(3)">Ejecutar ejercicio 3</button>
+            </div>
+
+            <div class="exercise-card" id="ejercicio4">
+                <h3>Ejercicio 4</h3>
+                <p>Encontrar cursos en común entre dos estudiantes.</p>
+                <button onclick="ejecutarEjercicio(4)">Ejecutar ejercicio 4</button>
+            </div>
+
+            <div class="exercise-card" id="ejercicio5">
+                <h3>Ejercicio 5</h3>
+                <p>Editar el arreglo de personas según instrucciones.</p>
+                <button onclick="ejecutarEjercicio(5)">Ejecutar ejercicio 5</button>
+            </div>
+
+            <div class="exercise-card" id="ejercicio6">
+                <h3>Ejercicio 6</h3>
+                <p>Ingresa números separados por coma para ordenarlos.</p>
+                <input type="text" id="input6" placeholder="Ej: 3, 6, 12, 5, 100, 1">
+                <button onclick="ejecutarEjercicio(6)">Ejecutar ejercicio 6</button>
+            </div>
+        </div>
+
+        <div class="result-box">
+            <div id="result-content">Esperando ejecución...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
