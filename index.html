@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios de JavaScript</title>
+    <title>Ejercicios de JavaScript - Edición Navideña</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     <div class="container">
-        <h1>Ejercicios de JavaScript</h1>
-        <p class="subtitle">Da clic en cada ejercicio</p>
-
-        <div class="grid-container">
-            <div class="exercise-card" id="ejercicio1">
+        
+        <div class="header-container">
+            <img src="grinch_header.png" alt="El Grinch sosteniendo un cartel de bienvenida" class="grinch-image">
+            
+            <div class="header-text">
+                <h1>Ejercicios de JavaScript</h1>
+                <p class="subtitle">Da clic en cada ejercicio</p>
+            </div>
+        </div>
+        
+        <div class="grid-container" id="ejercicios-container">
+            
+            <div class="exercise-card" data-exercise="1">
                 <h3>Ejercicio 1</h3>
                 <p>Unir las palabras del arreglo en una oración.</p>
-                <button onclick="ejecutarEjercicio(1)">Ejecutar ejercicio 1</button>
+                <button data-action="run">Ejecutar ejercicio 1</button>
             </div>
 
-            <div class="exercise-card" id="ejercicio2">
+            <div class="exercise-card" data-exercise="2">
                 <h3>Ejercicio 2</h3>
-                <p>Ingresa números separados por coma para duplicarlos.</p>
-                <input type="text" id="input2" placeholder="Ej: 1, 2, 4, 5">
-                <button onclick="ejecutarEjercicio(2)">Ejecutar ejercicio 2</button>
+                <p>Ingresa números separados por coma para duplicarlos (map).</p>
+                <input type="text" id="input-ejercicio-2" placeholder="Ej: 1, 2, 4, 5">
+                <button data-action="run">Ejecutar ejercicio 2</button>
             </div>
 
-            <div class="exercise-card" id="ejercicio3">
+            <div class="exercise-card" data-exercise="3">
                 <h3>Ejercicio 3</h3>
-                <p>Ingresa números separados por coma para calcular suma y producto.</p>
-                <input type="text" id="input3" placeholder="Ej: 1, 2, 3, 4">
-                <button onclick="ejecutarEjercicio(3)">Ejecutar ejercicio 3</button>
+                <p>Ingresa números separados por coma para calcular suma y producto (reduce).</p>
+                <input type="text" id="input-ejercicio-3" placeholder="Ej: 1, 2, 3, 4">
+                <button data-action="run">Ejecutar ejercicio 3</button>
             </div>
 
-            <div class="exercise-card" id="ejercicio4">
+            <div class="exercise-card" data-exercise="4">
                 <h3>Ejercicio 4</h3>
-                <p>Encontrar cursos en común entre dos estudiantes.</p>
-                <button onclick="ejecutarEjercicio(4)">Ejecutar ejercicio 4</button>
+                <p>Encontrar cursos en común entre dos estudiantes (filter & includes).</p>
+                <button data-action="run">Ejecutar ejercicio 4</button>
             </div>
 
-            <div class="exercise-card" id="ejercicio5">
+            <div class="exercise-card" data-exercise="5">
                 <h3>Ejercicio 5</h3>
-                <p>Editar el arreglo de personas según instrucciones.</p>
-                <button onclick="ejecutarEjercicio(5)">Ejecutar ejercicio 5</button>
+                <p>Editar el arreglo de personas según instrucciones (splice, unshift).</p>
+                <button data-action="run">Ejecutar ejercicio 5</button>
             </div>
 
-            <div class="exercise-card" id="ejercicio6">
+            <div class="exercise-card" data-exercise="6">
                 <h3>Ejercicio 6</h3>
-                <p>Ingresa números separados por coma para ordenarlos.</p>
-                <input type="text" id="input6" placeholder="Ej: 3, 6, 12, 5, 100, 1">
-                <button onclick="ejecutarEjercicio(6)">Ejecutar ejercicio 6</button>
+                <p>Ingresa números separados por coma para ordenarlos (Bubble Sort).</p>
+                <input type="text" id="input-ejercicio-6" placeholder="Ej: 3, 6, 12, 5, 100, 1">
+                <button data-action="run">Ejecutar ejercicio 6</button>
             </div>
+            
         </div>
 
         <div class="result-box">
